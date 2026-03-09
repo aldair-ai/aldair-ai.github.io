@@ -1,37 +1,21 @@
----
-layout: default
-title: Personal
----
+<article class="post">
 
-<div class="layout">
+<img src="{{ '/assets/img/black-gives-way-to-blue.jpg' | relative_url }}" class="post-image">
 
-  {% include sidebar.html %}
+<h2>
+<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
+Black Gives Way to Blue: when a song becomes a farewell
+</a>
+</h2>
 
-  <main class="content">
+<p>
+A reflection on Alice in Chains' tribute to Layne Staley and how music can transform grief into memory.
+</p>
 
-    <h1>Personal</h1>
+<p>
+<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
+Read article →
+</a>
+</p>
 
-    <p class="hero">
-      Essays and reflections on music, games, movies, and other things I find interesting.
-    </p>
-
-    {% for post in site.posts %}
-        {% if post.category == "personal" %}
-            <article class="post">
-            {% if post.cover %}
-                <img src="{{ post.cover | relative_url }}" class="post-image" alt="{{ post.title }}">
-            {% endif %}
-
-            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-            
-            <small>{{ post.date | date: "%B %d, %Y" }}</small>
-
-            <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-            </article>
-
-            {% unless forloop.last %}<hr>{% endunless %}
-        {% endif %}
-        {% endfor %}
-
-  </main>
-</div>
+</article>
