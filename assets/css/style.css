@@ -235,34 +235,52 @@ body {
 
 /* ===== Personal Blog ===== */
 /* Personal blog list */
+/* ===== Blog Post Layout ===== */
 
-.post-list {
+.post-content {
   max-width: 720px;
-  margin-top: 32px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
-.post-preview {
-  margin-bottom: 48px;
+/* Title */
+
+.post-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
 }
 
-.post-preview h2 {
-  margin-bottom: 8px;
+/* Section titles */
+
+.post-content h3 {
+  margin-top: 36px;
+  margin-bottom: 12px;
 }
 
-.post-preview a {
-  text-decoration: none;
+/* Paragraph spacing */
+
+.post-content p {
+  margin-bottom: 20px;
+  color: #374151;
 }
 
-.post-excerpt {
-  color: #4b5563;
-  margin-bottom: 8px;
+/* Horizontal rule */
+
+.post-content hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
 }
 
-.read-more {
-  font-size: 0.9rem;
-  color: #2563eb;
+/* YouTube video */
+
+.video-container {
+  margin: 32px 0;
 }
 
-.read-more:hover {
-  text-decoration: underline;
+.video-container iframe {
+  width: 100%;
+  height: 405px;
+  border-radius: 10px;
 }
