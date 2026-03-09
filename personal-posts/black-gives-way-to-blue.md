@@ -39,7 +39,7 @@ It is striking that in a world with more information available than ever before,
 
 Maybe that is why some songs continue to resonate decades later. They speak about things we all sense but rarely confront: human fragility, pain, and the search for meaning.
 
-Thinking about Layne Staley means facing a difficult contrast. One moment you see him at the top of the stage, commanding a crowd with a voice that could cut through any room. The next, you try to imagine his final days, consumed by addiction. When he died, he was around six feet tall and weighed less than ninety pounds. It is a reality that is hard to process.
+Thinking about Layne Staley means facing a difficult contrast. One moment you see him at the top of the stage, commanding a crowd with a voice that could cut through any room. The next, you try to imagine his final days, consumed by addiction. When he died, he was around 1.80 meters tall and weighed less than 40 kilograms. It is a reality that is hard to process.
 
 Some people may call it the price of fame, the result of bad influences, or a series of tragic decisions. But beyond all of that, one thing remains undeniable: his talent.
 
