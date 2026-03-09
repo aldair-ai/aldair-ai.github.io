@@ -1,5 +1,9 @@
-#title: Aldair Espinoza
-#description: Data Scientist | Machine Learning | AI
-#logo: /assets/img/headshot_circle.png
-#show_downloads: false
-#theme: jekyll-theme-minimal
+title: Aldair Espinoza
+description: Data Scientist | Machine Learning | AI
+
+markdown: kramdown
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed

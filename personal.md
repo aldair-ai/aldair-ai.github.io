@@ -12,7 +12,7 @@ title: Personal
     <h1>Personal</h1>
 
     <p class="hero">
-      Essays and reflections on music, games, movies, and other things I find 444 interesting.
+      Essays and reflections on music, games, movies, and other things I find interesting.
     </p>
 
     {% for post in site.posts %}
