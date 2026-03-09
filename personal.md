@@ -16,34 +16,26 @@ title: Personal
     </p>
 
     {% for post in site.posts %}
-      {% if post.category == "personal" %}
+        {% if post.category == "personal" %}
 
-      <article class="post">
+        <article class="post">
 
-        {% if post.cover %}
-        <img
-          src="{{ post.cover | relative_url }}"
-          alt="{{ post.title }}"
-          class="post-image"
-        >
+            {% if post.cover %}
+            <img src="{{ post.cover | relative_url }}" class="post-image">
+            {% endif %}
+
+            <h2>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            <p>{{ post.excerpt }}</p>
+
+        </article>
+
+        <hr>
+
         {% endif %}
-
-        <h2>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
-
-        <p>{{ post.excerpt }}</p>
-
-        <p>
-          <a href="{{ post.url | relative_url }}">Read article →</a>
-        </p>
-
-      </article>
-
-      <hr>
-
-      {% endif %}
-    {% endfor %}
+        {% endfor %}
 
   </main>
 </div>
