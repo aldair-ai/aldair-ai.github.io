@@ -19,7 +19,7 @@ Essays and reflections on music, games, movies, and other things I find interest
 
 <article class="post">
 
-<img src="{{ '/assets/img/black-gives-way-to-blue.jpg' | relative_url }}" class="post-image">
+<img src="{{ '/assets/img/black-gives-way-to-blue.jpg' | relative_url }}" class="post-thumb">
 
 <h2>
 <a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">

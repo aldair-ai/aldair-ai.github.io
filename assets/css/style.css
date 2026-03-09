@@ -200,10 +200,10 @@ body {
 }
 
 .post-image {
-  width: 420px;
-  max-width: 90%;
+  width: 320px;
+  height: auto;
   border-radius: 10px;
-  margin: 20px auto 28px auto;
+  margin: 20px auto;
   display: block;
 }
 
@@ -288,4 +288,12 @@ body {
   border-radius: 12px;
   display: block;
   margin: 0 auto;
+}
+
+
+.post-thumb {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
