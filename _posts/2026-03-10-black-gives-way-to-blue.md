@@ -18,7 +18,7 @@ Some songs are written to become hits. Others are born from pain.
 
 <div class="video-container">
 <iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=QEdRGw_M80E&list=RDQEdRGw_M80E&start_radio=1"
+src="https://www.youtube.com/embed/QEdRGw_M80E"
 title="Black Gives Way to Blue - Alice in Chains"
 frameborder="0"
 allowfullscreen>
