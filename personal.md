@@ -17,29 +17,27 @@ Essays and reflections on music, games, movies, and other things I find interest
 
 <div class="post-list">
 
-{% for post in site.posts %}
-  {% if post.category == "personal" %}
+<article class="post">
 
-  <article class="post-preview">
+<img src="{{ '/assets/img/black-gives-way-to-blue.jpg' | relative_url }}" class="post-image">
 
-    <h2>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h2>
+<h2>
+<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
+Black Gives Way to Blue: when a song becomes a farewell
+</a>
+</h2>
 
-    <p class="post-excerpt">
-      {{ post.excerpt }}
-    </p>
+<p>
+A reflection on Alice in Chains' tribute to Layne Staley and how music can transform grief into memory.
+</p>
 
-    <a class="read-more" href="{{ post.url | relative_url }}">
-      Read article →
-    </a>
+<p>
+<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
+Read article →
+</a>
+</p>
 
-  </article>
-
-  {% endif %}
-{% endfor %}
+</article>
 
 </div>
 
