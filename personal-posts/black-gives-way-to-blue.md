@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Black Gives Way to Blue: when a song becomes a farewell"
 date: 2026-03-10
 category: personal
