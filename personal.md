@@ -1,21 +1,47 @@
-<article class="post">
+---
+layout: default
+title: Personal
+---
 
-<img src="{{ '/assets/img/black-gives-way-to-blue.jpg' | relative_url }}" class="post-image">
+<div class="layout">
 
-<h2>
-<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
-Black Gives Way to Blue: when a song becomes a farewell
-</a>
-</h2>
+{% include sidebar.html %}
 
-<p>
-A reflection on Alice in Chains' tribute to Layne Staley and how music can transform grief into memory.
+<main class="content">
+
+<h1>Personal</h1>
+
+<p class="hero">
+Essays and reflections on music, games, movies, and other things I find interesting.
 </p>
 
-<p>
-<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
-Read article →
-</a>
-</p>
+<div class="post-list">
 
-</article>
+{% for post in site.posts %}
+  {% if post.category == "personal" %}
+
+  <article class="post-preview">
+
+    <h2>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+    <p class="post-excerpt">
+      {{ post.excerpt }}
+    </p>
+
+    <a class="read-more" href="{{ post.url | relative_url }}">
+      Read article →
+    </a>
+
+  </article>
+
+  {% endif %}
+{% endfor %}
+
+</div>
+
+</main>
+</div>
