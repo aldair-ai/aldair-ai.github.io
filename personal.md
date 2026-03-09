@@ -15,49 +15,35 @@ title: Personal
       Essays and reflections on music, games, movies, and other things I find interesting.
     </p>
 
-    {% raw %}
     {% for post in site.posts %}
       {% if post.category == "personal" %}
-    {% endraw %}
 
-    <article class="post">
+      <article class="post">
 
-      {% raw %}
-      {% if post.cover %}
-      <img
-        src="{{ post.cover | relative_url }}"
-        alt="{{ post.title }}"
-        class="post-image"
-      >
-      {% endif %}
-      {% endraw %}
+        {% if post.cover %}
+        <img
+          src="{{ post.cover | relative_url }}"
+          alt="{{ post.title }}"
+          class="post-image"
+        >
+        {% endif %}
 
-      <h2>
-        {% raw %}
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% endraw %}
-      </h2>
+        <h2>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
 
-      <p>
-        {% raw %}
-        {{ post.excerpt }}
-        {% endraw %}
-      </p>
+        <p>{{ post.excerpt }}</p>
 
-      <p>
-        {% raw %}
-        <a href="{{ post.url | relative_url }}">Read article →</a>
-        {% endraw %}
-      </p>
+        <p>
+          <a href="{{ post.url | relative_url }}">Read article →</a>
+        </p>
 
-    </article>
+      </article>
 
-    <hr>
+      <hr>
 
-    {% raw %}
       {% endif %}
     {% endfor %}
-    {% endraw %}
 
   </main>
 </div>
