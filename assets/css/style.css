@@ -1,0 +1,235 @@
+
+.talk,
+.teaching {
+  margin-top: 16px;
+}
+
+.talk ul,
+.teaching ul {
+  margin-left: 24px;
+}
+
+
+.avatar {
+  width: 160px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.sidebar h1 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.location {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.contact {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 12px;
+  color: #2563eb; 
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.location,
+.contact {
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+/* ===== Content ===== */
+.content h2 {
+  margin-top: 32px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+/* ===== Items ===== */
+.item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start; 
+  margin-top: 20px;
+}
+
+.item > div {
+  display: block;
+}
+
+.item strong {
+  display: inline-block;
+  margin-top: 2px; 
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 6px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+/* ===== Icons ===== */
+.icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #6b7280; 
+}
+
+/* ===== Global ===== */
+body {
+  margin: 0;
+  background-color: #f8fafc; /* gris claro global */
+  color: #1f2937;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ===== Sidebar (BLANCA) ===== */
+.sidebar {
+  background-color: #ffffff; /* ÚNICO blanco */
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/* ===== Content (GRIS) ===== */
+.content {
+  background-color: transparent; /* hereda gris del body */
+  padding: 0;
+}
+
+/* ===== Layout ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== Top Navigation ===== */
+.top-nav {
+  background-color: #f8fafc; /* mismo gris del fondo */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.top-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.top-nav nav {
+  display: flex;
+  gap: 24px;
+}
+
+.top-nav a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #1f2937;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.top-nav a:hover {
+  border-bottom-color: #2563eb;
+}
+
+.top-nav a.active {
+  border-bottom-color: #2563eb;
+  font-weight: 600;
+}
+
+/* ===== Projects ===== */
+.project {
+  margin-top: 40px;
+}
+
+.project h2 {
+  margin-bottom: 12px;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  margin: 16px 0;
+  display: block;
+}
+
+.project p {
+  max-width: 720px;
+}
+
+.project a {
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Blog / Writing ===== */
+.post {
+  margin-top: 40px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.post h2 {
+  margin-bottom: 8px;
+}
+
+.post p {
+  max-width: 720px;
+}
+
+.post a {
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
