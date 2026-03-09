@@ -233,3 +233,39 @@ body {
   }
 }
 
+/* ===== Personal Blog ===== */
+.video-container {
+  margin: 24px 0;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 8px;
+}
+
+
+.post-cover {
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.post-cover-overlay {
+  background: rgba(0,0,0,0.35);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-cover-overlay h1 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 700px;
+}
