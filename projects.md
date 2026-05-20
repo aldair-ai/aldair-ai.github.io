@@ -20,7 +20,7 @@ title: Projects
       <h2>abaudit — A/B Test Validity Auditor</h2>
 
       <img
-        src="{{ '/assets/img/projects/abaudit.jpg' | relative_url }}"
+        src="{{ '/assets/img/abaudit.jpg' | relative_url }}"
         class="project-image"
         alt="abaudit library"
       >
@@ -40,7 +40,7 @@ title: Projects
 
       <ul>
         <li>Pip-installable · CI/CD via GitHub Actions · Published on PyPI</li>
-        <li>184 tests · 99% coverage · tested on Python 3.9 – 3.12</li>
+        <li>184 tests · 100% coverage · tested on Python 3.9 – 3.12</li>
         <li>Modules: <code>validity</code>, <code>design</code>, <code>runtime</code>, <code>report</code></li>
       </ul>
 
@@ -58,7 +58,7 @@ title: Projects
       <h2>Statistical Thinking for Reliable ML — Research Notebooks</h2>
 
       <img
-        src="{{ '/assets/img/projects/dsc215.jpg' | relative_url }}"
+        src="{{ '/assets/img/dsc215.jpg' | relative_url }}"
         class="project-image"
         alt="Statistical thinking notebooks"
       >
@@ -96,7 +96,7 @@ title: Projects
       <h2>Machine Learning Theory — From Perceptrons to Double Descent</h2>
 
       <img
-        src="{{ '/assets/img/projects/dsc240.png' | relative_url }}"
+        src="{{ '/assets/img/dsc240.png' | relative_url }}"
         class="project-image"
         alt="ML theory notebooks"
       >
