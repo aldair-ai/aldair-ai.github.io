@@ -96,7 +96,7 @@ title: Projects
       <h2>Machine Learning Theory — From Perceptrons to Double Descent</h2>
 
       <img
-        src="{{ '/assets/img/dsc240.png' | relative_url }}"
+        src="{{ '/assets/img/dsc240.jpg' | relative_url }}"
         class="project-image"
         alt="ML theory notebooks"
       >
