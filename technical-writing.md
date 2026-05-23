@@ -19,21 +19,22 @@ title: Writing
     <!-- ===== Article 1 ===== -->
     <article class="post">
       <img
-        src="{{ '/assets/img/blog/llm_audit.png' | relative_url }}"
-        alt="LLMs in Audit"
+        src="https://miro.medium.com/v2/resize:fit:1200/1*xf19b8ks87pwd7Nn-l1aBA.jpeg"
+        alt="Your A/B Test Was Significant. But Was It Real?"
         class="post-image"
       >
 
-      <h2>How Generative AI Is Transforming Internal Audit</h2>
+      <h2>Your A/B Test Was Significant. But Was It Real?</h2>
 
       <p>
-        An overview of how large language models and retrieval-augmented generation can be applied
-        to automate audit workflows and improve compliance analysis.
+        Why p &lt; 0.05 is not enough — and what to do instead. A deep dive into
+        Positive Predictive Value, multiple testing, optional stopping, and how to
+        audit your experiments before you ship.
       </p>
 
       <p>
-        <a
-          href="https://medium.com/@yourusername/how-generative-ai-is-transforming-internal-audit"
+        
+          href="https://medium.com/@e6espinoza/your-a-b-test-was-significant-but-was-it-real-3abed5e6f72b"
           target="_blank"
         >
           Read on Medium →
@@ -59,7 +60,7 @@ title: Writing
       </p>
 
       <p>
-        <a
+        
           href="https://medium.com/@yourusername/forecasting-at-scale"
           target="_blank"
         >
@@ -86,7 +87,7 @@ title: Writing
       </p>
 
       <p>
-        <a
+        
           href="https://medium.com/@yourusername/computer-vision-for-compliance-monitoring"
           target="_blank"
         >
