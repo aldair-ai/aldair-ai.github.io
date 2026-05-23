@@ -16,7 +16,7 @@ A Peruvian guy, no Swedish background, no clue what the lyrics meant, and still 
 
 <div class="video-container">
 <iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=eV9aKPHt_98&list=RDeV9aKPHt_98&start_radio=1&pp=ygURS8Okcmxla2VuIHbDpG50YXKgBwE%3D"
+src="https://www.youtube.com/embed/eV9aKPHt_98?list=RDeV9aKPHt_98"
 title="Kärleken väntar - Kent"
 frameborder="0"
 allowfullscreen>
