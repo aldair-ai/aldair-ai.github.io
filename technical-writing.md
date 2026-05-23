@@ -33,12 +33,7 @@ title: Writing
       </p>
 
       <p>
-        
-          href="https://medium.com/@e6espinoza/your-a-b-test-was-significant-but-was-it-real-3abed5e6f72b"
-          target="_blank"
-        >
-          Read on Medium →
-        </a>
+        <a href="https://medium.com/@e6espinoza/your-a-b-test-was-significant-but-was-it-real-3abed5e6f72b" target="_blank">Read on Medium →</a>
       </p>
     </article>
 
