@@ -39,6 +39,31 @@ Read article →
 
 </article>
 
+
+<article class="post">
+
+
+<h2>
+<a href="{{ '/personal-posts/karleken-vantar' | relative_url }}">
+Kärleken väntar: When You Feel a Song Before You Understand It
+</a>
+</h2>
+
+<p>
+A Peruvian guy stumbles onto Swedish music and finds out you don't need to understand a song to feel it.
+</p>
+
+<p>
+<a href="{{ '/personal-posts/karleken-vantar' | relative_url }}">
+Read article →
+</a>
+</p>
+
+</article>
+
+
+
+
 </div>
 
 </main>
