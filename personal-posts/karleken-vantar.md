@@ -6,7 +6,7 @@ category: personal
 cover: /assets/img/karleken-vantar.jpg
 ---
 
-# Kärleken väntar: When You Feel a Song Before You Understand It
+# Kärleken väntar: When You Feel a Song Before You Understand It 
 
 A Peruvian guy, no Swedish background, no clue what the lyrics meant, and still completely hooked. That's how "Kärleken väntar" found me.
 
