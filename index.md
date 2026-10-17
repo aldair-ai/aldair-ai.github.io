@@ -30,15 +30,7 @@ title: Experience
           <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/>
         </svg>
       </span>
-      <a href="mailto:e6espinoza@ucsd.edu">e6espinoza@ucsd.edu</a><br>
-    
-      <span class="icon">
-        <!-- phone -->
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.8a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.24 1z"/>
-        </svg>
-      </span>
-      (619) 953-7986
+      <a href="mailto:e6espinoza@ucsd.edu">e6espinoza@ucsd.edu</a>
     </p>
     
     <nav class="links">
@@ -80,7 +72,7 @@ title: Experience
       <img src="{{ '/assets/img/ucsd.png' | relative_url }}" class="logo" alt="UCSD">
       <div>
         <strong>University of California, San Diego (UCSD)</strong><br>
-        M.S. in Data Science (Expected 2027)
+        M.S. in Data Science (Expected March 2027)
       </div>
     </div>
 
@@ -102,6 +94,8 @@ title: Experience
 
     <h2>Work Experience</h2>
 
+    
+    <!-- 
     <div class="item">
       <img src="{{ '/assets/img/insiteai.png' | relative_url }}" class="logo" alt="Insite AI">
       <div>
@@ -113,12 +107,13 @@ title: Experience
         </p>
       </div>
     </div>
+    -->
     
     <div class="item">
       <img src="{{ '/assets/img/bcp.png' | relative_url }}" class="logo" alt="Credicorp">
       <div>
-        <strong>Lead Data Scientist, Audit — Credit Bank of Peru (Credicorp)</strong><br>
-        <em>Lima, Peru | Jan 2023 – Jan 2025</em>
+        <strong>Lead Data Scientist, Audit, Credit Bank of Peru (Credicorp)</strong><br>
+        <em>Lima, Peru | Nov 2023 – Jan 2025</em>
         <p>
           Led a Data Science team delivering GenAI and computer vision solutions for audit automation, compliance
           monitoring, and enterprise risk management at scale.
@@ -129,7 +124,7 @@ title: Experience
     <div class="item">
       <img src="{{ '/assets/img/bcp.png' | relative_url }}" class="logo" alt="Credicorp">
       <div>
-        <strong>Senior Data Scientist — Credit Bank of Peru</strong><br>
+        <strong>Senior Data Scientist, Credit Bank of Peru</strong><br>
         <em>Lima, Peru | Jan 2023 – Nov 2023</em>
         <p>
           Designed cloud-based AI systems to automate contract validation and sales compliance workflows, significantly
@@ -141,7 +136,7 @@ title: Experience
     <div class="item">
       <img src="{{ '/assets/img/abinbev.png' | relative_url }}" class="logo" alt="AB InBev">
       <div>
-        <strong>Senior Data Scientist, Marketplace — AB InBev</strong><br>
+        <strong>Senior Data Scientist, Marketplace, AB InBev</strong><br>
         <em>Lima, Peru | Jan 2022 – Jan 2023</em>
         <p>
           Built and deployed ML models for personalization, demand forecasting, and growth experimentation within a
@@ -153,7 +148,7 @@ title: Experience
     <div class="item">
       <img src="{{ '/assets/img/pichincha.png' | relative_url }}" class="logo" alt="Pichincha Bank">
       <div>
-        <strong>Data Scientist, Risk — Pichincha Bank</strong><br>
+        <strong>Data Scientist, Risk, Pichincha Bank</strong><br>
         <em>Lima, Peru | Jan 2021 – Jan 2022</em>
         <p>
           Applied machine learning models to credit risk and collections optimization, improving default rates and loan
@@ -168,15 +163,15 @@ title: Experience
 
     <ul class="list">
       <li>
-        <strong>CCAT – Data FirstStep</strong> — June 2024  
+        <strong>CCAT – Data FirstStep</strong>, June 2024  
         <span class="meta">(Keynote · University audience, 150+ attendees)</span>
       </li>
       <li>
-        <strong>CLAIN Hackathon – OCR & Speech Recognition Solutions</strong> — June 2023  
+        <strong>CLAIN Hackathon – OCR & Speech Recognition Solutions</strong>, June 2023  
         <span class="meta">(4th place · 30 teams · 250+ professionals)</span>
       </li>
       <li>
-        <strong>Credicorp Internal Audit Conference</strong> — August 2023  
+        <strong>Credicorp Internal Audit Conference</strong>, August 2023  
         <span class="meta">(Corporate conference · 500+ attendees)</span>
       </li>
     </ul>
@@ -187,7 +182,7 @@ title: Experience
     <div class="item">
       <img src="{{ '/assets/img/isil.png' | relative_url }}" class="logo" alt="ISIL">
       <div>
-        <strong>ISIL — Peru</strong><br>
+        <strong>ISIL, Peru</strong><br>
         <em>Instructor · Data Science & Machine Learning 2024-Present</em>
 
       </div>
@@ -196,7 +191,7 @@ title: Experience
     <div class="item">
       <img src="{{ '/assets/img/sama.jpg' | relative_url }}" class="logo" alt="CC SAMA PAD">
       <div>
-        <strong>CC. SAMA (PAD) — Peru</strong><br>
+        <strong>CC. SAMA (PAD), Peru</strong><br>
         <em>Instructor · 2024 – 2025</em>
         
       </div>

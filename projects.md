@@ -17,7 +17,7 @@ title: Projects
 
     <!-- ===== Project 1 ===== -->
     <section class="project">
-      <h2>abaudit — A/B Test Validity Auditor</h2>
+      <h2>abaudit: A/B Test Validity Auditor</h2>
 
       <img
         src="{{ '/assets/img/abaudit.jpg' | relative_url }}"
@@ -27,14 +27,14 @@ title: Projects
 
       <p>
         Open source Python library that audits the statistical validity of A/B test results.
-        Most experimentation tools tell you <em>whether</em> a result is significant —
+        Most experimentation tools tell you <em>whether</em> a result is significant.
         <strong>abaudit</strong> tells you <em>whether to trust it</em>.
       </p>
 
       <p>
         Built on the Ioannidis (2005) Positive Predictive Value framework, the library
         detects Sample Ratio Mismatch, optional stopping inflation, multiple metric fishing,
-        and data fabrication — then computes a composite bias score and generates a
+        and data fabrication, then computes a composite bias score and generates a
         self-contained HTML audit report.
       </p>
 
@@ -55,7 +55,7 @@ title: Projects
 
     <!-- ===== Project 2 ===== -->
     <section class="project">
-      <h2>Statistical Thinking for Reliable ML — Research Notebooks</h2>
+      <h2>Statistical Thinking for Reliable ML: Research Notebooks</h2>
 
       <img
         src="{{ '/assets/img/dsc215.jpg' | relative_url }}"
@@ -65,7 +65,7 @@ title: Projects
 
       <p>
         A structured portfolio of reproducible notebooks examining how and why
-        published research findings fail to replicate — and what rigorous experimental
+        published research findings fail to replicate, and what rigorous experimental
         design looks like in practice.
       </p>
 
@@ -93,7 +93,7 @@ title: Projects
 
     <!-- ===== Project 3 ===== -->
     <section class="project">
-      <h2>Machine Learning Theory — From Perceptrons to Double Descent</h2>
+      <h2>Machine Learning Theory: From Perceptrons to Double Descent</h2>
 
       <img
         src="{{ '/assets/img/dsc240.jpg' | relative_url }}"
@@ -102,7 +102,7 @@ title: Projects
       >
 
       <p>
-        A deep-dive into the mathematical foundations of modern machine learning —
+        A deep-dive into the mathematical foundations of modern machine learning,
         from first principles to the phenomena that explain why large neural networks
         work better than classical theory predicts.
       </p>
