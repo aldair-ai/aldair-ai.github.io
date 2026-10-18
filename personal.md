@@ -3,68 +3,18 @@ layout: default
 title: Personal
 ---
 
-<div class="layout">
+<header class="page-header">
+  <h1>Personal</h1>
+  <p class="lead">Essays and reflections on music, games, movies, and other things I find interesting.</p>
+</header>
 
-{% include sidebar.html %}
-
-<main class="content">
-
-<h1>Personal</h1>
-
-<p class="hero">
-Essays and reflections on music, games, movies, and other things I find interesting.
-</p>
-
-<div class="post-list">
-
-<article class="post">
-
-<!-- <img src="{{ '/assets/img/black-gives-way-to-blue.jpg' | relative_url }}" class="post-thumb"> -->
-
-<h2>
-<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
-Black Gives Way to Blue: when a song becomes a farewell
-</a>
-</h2>
-
-<p>
-A reflection on Alice in Chains' tribute to Layne Staley and how music can transform grief into memory.
-</p>
-
-<p>
-<a href="{{ '/personal-posts/black-gives-way-to-blue' | relative_url }}">
-Read article →
-</a>
-</p>
-
-</article>
-
-
-<article class="post">
-
-
-<h2>
-<a href="{{ '/personal-posts/karleken-vantar' | relative_url }}">
-Kärleken väntar: When You Feel a Song Before You Understand It
-</a>
-</h2>
-
-<p>
-A Peruvian guy stumbles onto Swedish music and finds out you don't need to understand a song to feel it.
-</p>
-
-<p>
-<a href="{{ '/personal-posts/karleken-vantar' | relative_url }}">
-Read article →
-</a>
-</p>
-
-</article>
-
-
-
-
-</div>
-
-</main>
+{% assign personal_posts = site.pages | where: "category", "personal" | sort: "date" | reverse %}
+<div class="stack">
+  {% for post in personal_posts %}
+  <article class="card card--link">
+    <p class="card-eyebrow"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time></p>
+    <h2 class="card-title"><a href="{{ post.url | relative_url | remove: '.html' }}">{{ post.title }}</a></h2>
+    <p class="card-text">{{ post.description }}</p>
+  </article>
+  {% endfor %}
 </div>

@@ -3,6 +3,7 @@ layout: post
 title: "Kärleken väntar: When You Feel a Song Before You Understand It"
 date: 2026-05-23
 category: personal
+description: "A Peruvian guy stumbles onto Swedish music and finds out you don't need to understand a song to feel it."
 cover: /assets/img/karleken-vantar.jpg
 ---
 

@@ -1,0 +1,16 @@
+# Top navigation. `match` lists the first URL segment(s) that mark the link as current.
+- title: Home
+  url: /
+  match: [index]
+- title: Projects
+  url: /projects
+  match: [projects]
+- title: Experience
+  url: /experience
+  match: [experience]
+- title: Writing
+  url: /technical-writing
+  match: [technical-writing]
+- title: Personal
+  url: /personal
+  match: [personal, personal-posts]

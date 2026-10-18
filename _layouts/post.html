@@ -1,31 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+---
+layout: default
+---
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-
-<header class="top-nav">
-  <div class="top-nav-inner">
-    <nav>
-      <a href="{{ '/' | relative_url }}">Experience</a>
-      <a href="{{ '/projects' | relative_url }}">Projects</a>
-      <a href="{{ '/technical-writing' | relative_url }}">Technical Writing</a>
-      <a href="{{ '/personal' | relative_url }}">Personal</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <div class="post-content">
-    {{ content }}
+<article class="prose">
+  <div class="post-meta">
+    {% if page.category == 'personal' %}<a href="{{ '/personal' | relative_url }}">← Personal</a>{% endif %}
+    {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% endif %}
   </div>
 
-</main>
-
-</body>
-</html>
+  {{ content }}
+</article>
