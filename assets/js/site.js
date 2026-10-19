@@ -50,4 +50,24 @@
       if (!nav.contains(event.target)) setMenuOpen(false);
     });
   }
+
+  // Fade sections in as they scroll into view. Only sections that start below the fold
+  // are hidden, so nothing visible on load flickers and nothing stays hidden without JS.
+  var reveals = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reveals.length && 'IntersectionObserver' in window && !reduceMotion) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('is-pending');
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -15% 0px' });
+
+    reveals.forEach(function (section) {
+      if (section.getBoundingClientRect().top < window.innerHeight) return;
+      section.classList.add('is-pending');
+      observer.observe(section);
+    });
+  }
 })();

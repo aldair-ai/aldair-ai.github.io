@@ -4,80 +4,88 @@ title: Home
 wide: true
 ---
 
-<section class="intro">
-  <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" class="intro-photo" width="144" height="144" alt="Edwin Espinoza">
+<!-- ===== Hero ===== -->
+<section class="home-hero">
+  <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" class="home-hero-photo" width="80" height="80" alt="{{ site.author }}">
 
-  <div class="intro-body">
-    <h1>Edwin Espinoza</h1>
-    <p class="intro-role">Data Scientist · Machine Learning · AI</p>
-    <p class="intro-location">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>
-      San Diego, CA
-    </p>
+  <h1 class="home-hero-title">
+    <span class="home-hero-name">{{ site.author }}</span>
+    <span class="home-hero-headline">Data Scientist building ML and GenAI systems you can measure and trust.</span>
+  </h1>
 
-    <p class="lead">
-      Master’s student in Data Science with 5+ years of experience applying Machine Learning and AI across finance,
-      retail, and marketplace domains. Proven track record building predictive models and leading end-to-end
-      analytics and experimentation initiatives to drive measurable business impact. Led ML teams for 2 years.
-    </p>
+  <p class="home-hero-sub">
+    5+ years across banking, CPG and retail. Led ML teams at Credicorp.
+    M.S. Data Science at UC San Diego (March 2027).
+  </p>
 
-    <ul class="actions">
-      <li>
-        <a class="button button--primary" href="mailto:e6espinoza@ucsd.edu">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
-          Email
-        </a>
-      </li>
-      <li>
-        <a class="button button--secondary" href="https://linkedin.com/in/aldair-ai">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 102.5 6a2.48 2.48 0 002.48-2.5zM3 8.98h4v12H3zM9 8.98h3.8v1.64h.05a4.17 4.17 0 013.75-2.06c4 0 4.75 2.63 4.75 6.05v6.37h-4v-5.64c0-1.35 0-3.08-1.88-3.08s-2.17 1.47-2.17 3v5.72H9z"/></svg>
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a class="button button--secondary" href="https://github.com/aldair-ai">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.19-3.37-1.19-.46-1.16-1.12-1.47-1.12-1.47-.92-.63.07-.62.07-.62 1.02.07 1.56 1.05 1.56 1.05.9 1.55 2.36 1.1 2.94.84.09-.65.35-1.1.63-1.35-2.22-.25-4.56-1.11-4.56-4.95a3.87 3.87 0 011.03-2.69 3.6 3.6 0 01.1-2.65s.84-.27 2.75 1.02a9.47 9.47 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02a3.6 3.6 0 01.1 2.65 3.87 3.87 0 011.03 2.69c0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0012 2z"/></svg>
-          GitHub
-        </a>
-      </li>
-    </ul>
-  </div>
+  <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>Open to Data Scientist and ML roles</p>
+
+  <ul class="actions">
+    <li><a class="button button--primary" href="{{ '/assets/cv.pdf' | relative_url }}" download>{% include icon.html name="download" %}Download CV</a></li>
+    <li><a class="button button--secondary" href="{{ site.contact.linkedin }}">{% include icon.html name="linkedin" %}LinkedIn</a></li>
+    <li><a class="button button--secondary" href="{{ site.contact.github }}">{% include icon.html name="github" %}GitHub</a></li>
+    <li><a class="button button--secondary" href="mailto:{{ site.contact.email }}">{% include icon.html name="mail" %}Email</a></li>
+  </ul>
 </section>
 
-<section class="home-projects" aria-labelledby="selected-projects">
-  <div class="section-head">
-    <h2 id="selected-projects">Selected projects</h2>
-    <a href="{{ '/projects' | relative_url }}">All projects →</a>
-  </div>
+<!-- ===== Logo strip ===== -->
+<section class="home-section logo-strip reveal" aria-labelledby="logo-strip-label">
+  <p class="logo-strip-label" id="logo-strip-label">Studied and worked at</p>
+  <ul class="logo-strip-list">
+    <li><img src="{{ '/assets/img/logos/ucsd.png' | relative_url }}" width="80" height="80" alt="UC San Diego" loading="lazy"></li>
+    <li><img src="{{ '/assets/img/logos/mitx.png' | relative_url }}" width="251" height="77" alt="MITx" loading="lazy"></li>
+    <li><img src="{{ '/assets/img/logos/bcp.png' | relative_url }}" width="317" height="80" alt="Credicorp (BCP)" loading="lazy"></li>
+    <li><img src="{{ '/assets/img/logos/abinbev.png' | relative_url }}" width="320" height="59" alt="AB InBev" loading="lazy"></li>
+    <li><img src="{{ '/assets/img/logos/insiteai.png' | relative_url }}" width="320" height="77" alt="Insite AI" loading="lazy"></li>
+    <li><img src="{{ '/assets/img/logos/pichincha.png' | relative_url }}" width="320" height="67" alt="Pichincha Bank" loading="lazy"></li>
+  </ul>
+</section>
+
+<!-- ===== Featured projects (content in _data/projects.yml) ===== -->
+<section class="home-section reveal" aria-labelledby="featured-projects">
+  <h2 id="featured-projects">Featured projects</h2>
 
   <div class="grid">
-    <article class="card card--link">
-      <h3 class="card-title"><a href="{{ '/projects#abaudit' | relative_url }}">abaudit</a></h3>
-      <p class="card-text">Open source Python library that audits the statistical validity of A/B test results.</p>
-      <ul class="tags">
-        <li class="tag">Python</li>
-        <li class="tag">Experimentation</li>
-        <li class="tag">PyPI</li>
-      </ul>
-    </article>
+    {% for project in site.data.projects %}
+    <article class="card project-card">
+      <h3 class="card-title">{{ project.title }}</h3>
+      <p class="card-text">{{ project.description }}</p>
 
-    <article class="card card--link">
-      <h3 class="card-title"><a href="{{ '/projects#statistical-thinking' | relative_url }}">Statistical Thinking for Reliable ML</a></h3>
-      <p class="card-text">Reproducible notebooks on why published findings fail to replicate, and what rigorous experimental design looks like.</p>
-      <ul class="tags">
-        <li class="tag">Causal inference</li>
-        <li class="tag">Multiple testing</li>
+      <ul class="metrics" aria-label="Highlights">
+        {% for metric in project.metrics %}<li class="metric">{{ metric }}</li>{% endfor %}
       </ul>
-    </article>
 
-    <article class="card card--link">
-      <h3 class="card-title"><a href="{{ '/projects#ml-theory' | relative_url }}">Machine Learning Theory</a></h3>
-      <p class="card-text">The mathematical foundations of modern ML, from perceptrons to double descent, implemented from scratch.</p>
-      <ul class="tags">
-        <li class="tag">Learning theory</li>
-        <li class="tag">SVM</li>
-        <li class="tag">Double descent</li>
-      </ul>
+      <div class="card-footer">
+        <ul class="tags" aria-label="Tech stack">
+          {% for tag in project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
+        </ul>
+        <p class="card-links">
+          {% for link in project.links %}<a href="{{ link.url }}">{% include icon.html name=link.icon %}{{ link.label }}</a>{% endfor %}
+        </p>
+      </div>
     </article>
+    {% endfor %}
   </div>
+
+  <p class="section-more"><a href="{{ '/projects' | relative_url }}">All projects →</a></p>
+</section>
+
+<!-- ===== Experience snapshot (content in _data/roles.yml) ===== -->
+<section class="home-section home-section--narrow reveal" aria-labelledby="experience-snapshot">
+  <h2 id="experience-snapshot">Experience</h2>
+
+  <ol class="timeline">
+    {% for role in site.data.roles %}
+    <li class="timeline-item">
+      <img src="{{ role.logo | prepend: '/assets/img/logos/' | relative_url }}" class="logo" width="44" height="44" alt="" loading="lazy">
+      <div>
+        <p class="timeline-title">{{ role.title }}</p>
+        <p class="timeline-company">{{ role.company }}</p>
+      </div>
+      <p class="timeline-date">{{ role.dates }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <p class="section-more"><a href="{{ '/experience' | relative_url }}">Full experience →</a></p>
 </section>

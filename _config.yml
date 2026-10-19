@@ -1,10 +1,16 @@
 title: Aldair Espinoza
-author: Edwin Espinoza
+author: Edwin Aldair Espinoza
 description: Data Scientist | Machine Learning | AI
 
 markdown: kramdown
 
 permalink: /:year/:month/:day/:title/
+
+# Contact links used in the Home hero and the site footer.
+contact:
+  email: e6espinoza@ucsd.edu
+  linkedin: https://linkedin.com/in/aldair-ai
+  github: https://github.com/aldair-ai
 
 plugins:
   - jekyll-feed

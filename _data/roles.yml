@@ -1,0 +1,25 @@
+# Roles in the Home page experience snapshot, newest first. Logos live in assets/img/logos/.
+- title: Senior Data Scientist
+  company: Insite AI
+  dates: Jan 2025 – Sep 2025
+  logo: insiteai.png
+
+- title: Lead Data Scientist, Audit
+  company: Credit Bank of Peru (Credicorp)
+  dates: Nov 2023 – Jan 2025
+  logo: bcp.png
+
+- title: Senior Data Scientist
+  company: Credit Bank of Peru
+  dates: Jan 2023 – Nov 2023
+  logo: bcp.png
+
+- title: Senior Data Scientist, Marketplace
+  company: AB InBev
+  dates: Jan 2022 – Jan 2023
+  logo: abinbev.png
+
+- title: Data Scientist, Risk
+  company: Pichincha Bank
+  dates: Jan 2021 – Jan 2022
+  logo: pichincha.png

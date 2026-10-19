@@ -1,0 +1,31 @@
+# Featured projects on the Home page, in display order.
+# Each repository URL lives only here, so a renamed repo is a one-line change.
+- title: abaudit
+  description: "Open-source Python library that tells you whether to trust an A/B test result: detects sample ratio mismatch, optional stopping, metric fishing and data fabrication."
+  metrics: ["On PyPI", "184 tests", "100% coverage"]
+  tags: [Python, GitHub Actions]
+  links:
+    - label: GitHub
+      icon: github
+      url: https://github.com/aldair-ai/abaudit
+    - label: PyPI
+      icon: external
+      url: https://pypi.org/project/abaudit/
+
+- title: BA Host Advisor
+  description: "Multi-agent advisor for short-term rental hosts on real Inside Airbnb data. A LangGraph supervisor routes questions to SQL, RAG and cache-augmented agents in parallel."
+  metrics: ["Eval-gated CI", "CAG vs RAG benchmark", "Tracing + Prometheus"]
+  tags: [LangGraph, DuckDB, Qdrant, FastAPI, Docker]
+  links:
+    - label: GitHub
+      icon: github
+      url: https://github.com/aldair-ai/multi_agent_project
+
+- title: Loan Intent Classification
+  description: "Multi-label intent classification of Spanish free text from SME credit applications, served as an API with a Streamlit demo."
+  metrics: ["Test macro F1 0.732", "+0.043 over baseline", "95% CIs"]
+  tags: [multilingual-e5, scikit-learn, FastAPI, Streamlit]
+  links:
+    - label: GitHub
+      icon: github
+      url: https://github.com/aldair-ai/konfio
