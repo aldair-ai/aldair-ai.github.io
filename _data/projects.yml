@@ -1,7 +1,28 @@
-# Featured projects on the Home page, in display order.
-# Each repository URL lives only here, so a renamed repo is a one-line change.
-- title: abaudit
+# Projects, in display order. `featured: true` also puts a project on the Home page.
+# Each repository and demo URL lives only here, so a renamed repo is a one-line change.
+# `description` is the one-liner for cards; `details` (Markdown) replaces it on the Projects page.
+- id: abaudit
+  title: abaudit
+  featured: true
   description: "Open-source Python library that tells you whether to trust an A/B test result: detects sample ratio mismatch, optional stopping, metric fishing and data fabrication."
+  details: |
+    Open source Python library that audits the statistical validity of A/B test results.
+    Most experimentation tools tell you *whether* a result is significant.
+    **abaudit** tells you *whether to trust it*.
+
+    Built on the Ioannidis (2005) Positive Predictive Value framework, the library
+    detects Sample Ratio Mismatch, optional stopping inflation, multiple metric fishing,
+    and data fabrication, then computes a composite bias score and generates a
+    self-contained HTML audit report.
+
+    - Pip-installable · CI/CD via GitHub Actions · Published on PyPI
+    - 184 tests · 100% coverage · tested on Python 3.9 – 3.12
+    - Modules: `validity`, `design`, `runtime`, `report`
+  image:
+    src: /assets/img/abaudit.jpg
+    width: 2830
+    height: 735
+    alt: abaudit library
   metrics: ["On PyPI", "184 tests", "100% coverage"]
   tags: [Python, GitHub Actions]
   links:
@@ -12,7 +33,9 @@
       icon: external
       url: https://pypi.org/project/abaudit/
 
-- title: BA Host Advisor
+- id: ba-host-advisor
+  title: BA Host Advisor
+  featured: true
   description: "Multi-agent advisor for short-term rental hosts on real Inside Airbnb data. A LangGraph supervisor routes questions to SQL, RAG and cache-augmented agents in parallel."
   metrics: ["Eval-gated CI", "CAG vs RAG benchmark", "Tracing + Prometheus"]
   tags: [LangGraph, DuckDB, Qdrant, FastAPI, Docker]
@@ -21,7 +44,9 @@
       icon: github
       url: https://github.com/aldair-ai/multi_agent_project
 
-- title: Loan Intent Classification
+- id: loan-intent
+  title: Loan Intent Classification
+  featured: true
   description: "Multi-label intent classification of Spanish free text from SME credit applications, served as an API with a Streamlit demo."
   metrics: ["Test macro F1 0.732", "+0.043 over baseline", "95% CIs"]
   tags: [multilingual-e5, scikit-learn, FastAPI, Streamlit]
@@ -29,3 +54,17 @@
     - label: GitHub
       icon: github
       url: https://github.com/aldair-ai/konfio
+
+- id: factored-hackathon
+  title: Factored AI & Data Hackathon 2026
+  featured: false
+  description: "Card and account inquiries assistant with step-up OTP verification, handoff to human agents and a full audit trail. Team project."
+  # TODO: replace with your role on the team. Shown on the page as "My role: ...".
+  role: TODO
+  links:
+    - label: GitHub
+      icon: github
+      url: https://github.com/aldair-ai/factored-hackathon-2026-key-peru
+    - label: Live demo
+      icon: external
+      url: https://factored-hackathon-2026-key-peru-2.seenode.app/

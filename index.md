@@ -41,29 +41,14 @@ wide: true
   </ul>
 </section>
 
-<!-- ===== Featured projects (content in _data/projects.yml) ===== -->
+<!-- ===== Featured projects (content in _data/projects.yml, featured: true) ===== -->
 <section class="home-section reveal" aria-labelledby="featured-projects">
   <h2 id="featured-projects">Featured projects</h2>
 
   <div class="grid">
-    {% for project in site.data.projects %}
-    <article class="card project-card">
-      <h3 class="card-title">{{ project.title }}</h3>
-      <p class="card-text">{{ project.description }}</p>
-
-      <ul class="metrics" aria-label="Highlights">
-        {% for metric in project.metrics %}<li class="metric">{{ metric }}</li>{% endfor %}
-      </ul>
-
-      <div class="card-footer">
-        <ul class="tags" aria-label="Tech stack">
-          {% for tag in project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
-        </ul>
-        <p class="card-links">
-          {% for link in project.links %}<a href="{{ link.url }}">{% include icon.html name=link.icon %}{{ link.label }}</a>{% endfor %}
-        </p>
-      </div>
-    </article>
+    {% assign featured_projects = site.data.projects | where: "featured", true %}
+    {% for entry in featured_projects %}
+      {% include project-card.html project=entry %}
     {% endfor %}
   </div>
 
@@ -74,18 +59,7 @@ wide: true
 <section class="home-section home-section--narrow reveal" aria-labelledby="experience-snapshot">
   <h2 id="experience-snapshot">Experience</h2>
 
-  <ol class="timeline">
-    {% for role in site.data.roles %}
-    <li class="timeline-item">
-      <img src="{{ role.logo | prepend: '/assets/img/logos/' | relative_url }}" class="logo" width="44" height="44" alt="" loading="lazy">
-      <div>
-        <p class="timeline-title">{{ role.title }}</p>
-        <p class="timeline-company">{{ role.company }}</p>
-      </div>
-      <p class="timeline-date">{{ role.dates }}</p>
-    </li>
-    {% endfor %}
-  </ol>
+  {% include timeline.html items=site.data.roles %}
 
   <p class="section-more"><a href="{{ '/experience' | relative_url }}">Full experience →</a></p>
 </section>

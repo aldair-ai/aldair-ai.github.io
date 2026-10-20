@@ -1,0 +1,45 @@
+{%- comment -%}
+  Project card from _data/projects.yml.
+  Params: project  one entry from site.data.projects
+          large    "true" for the Projects page format (longer details, image, buttons)
+{%- endcomment -%}
+{%- assign project = include.project -%}
+<article class="card project-card{% if include.large %} card--roomy project-card--large{% endif %}"{% if include.large %} id="{{ project.id }}"{% endif %}>
+  {% if include.large and project.image %}
+  <img src="{{ project.image.src | relative_url }}" class="card-media" width="{{ project.image.width }}" height="{{ project.image.height }}" alt="{{ project.image.alt }}">
+  {% endif %}
+
+  {% if include.large %}<h2 class="card-title">{{ project.title }}</h2>{% else %}<h3 class="card-title">{{ project.title }}</h3>{% endif %}
+
+  {% if include.large and project.details %}
+  <div class="project-details">{{ project.details | markdownify }}</div>
+  {% else %}
+  <p class="card-text">{{ project.description }}</p>
+  {% endif %}
+
+  {% if project.role %}<p class="project-role"><strong>My role:</strong> {{ project.role }}</p>{% endif %}
+
+  {% if project.metrics %}
+  <ul class="metrics" aria-label="Highlights">
+    {% for metric in project.metrics %}<li class="metric">{{ metric }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="card-footer">
+    {% if project.tags %}
+    <ul class="tags" aria-label="Tech stack">
+      {% for tag in project.tags %}<li class="tag">{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if include.large %}
+    <p class="actions">
+      {% for link in project.links %}<a class="button button--secondary" href="{{ link.url }}">{% include icon.html name=link.icon %}{{ link.label }}</a>{% endfor %}
+    </p>
+    {% else %}
+    <p class="card-links">
+      {% for link in project.links %}<a href="{{ link.url }}">{% include icon.html name=link.icon %}{{ link.label }}</a>{% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</article>
