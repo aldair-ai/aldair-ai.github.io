@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Projects by Edwin Aldair Espinoza: abaudit, a multi-agent host advisor, Spanish loan intent classification, a hackathon assistant and research notebooks."
 title: Projects
 ---
 

@@ -4,7 +4,7 @@ layout: default
 
 <article class="prose">
   <div class="post-meta">
-    {% if page.category == 'personal' %}<a href="{{ '/personal' | relative_url }}">← Personal</a>{% endif %}
+    {% if page.category == 'personal' %}<a href="{{ '/personal/' | relative_url }}">← Personal</a>{% endif %}
     {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% endif %}
   </div>
 

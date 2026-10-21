@@ -3,14 +3,14 @@
   url: /
   match: [index]
 - title: Projects
-  url: /projects
+  url: /projects/
   match: [projects]
 - title: Experience
-  url: /experience
+  url: /experience/
   match: [experience]
 - title: Writing
-  url: /technical-writing
+  url: /technical-writing/
   match: [technical-writing]
 - title: Personal
-  url: /personal
+  url: /personal/
   match: [personal, personal-posts]

@@ -300,6 +300,31 @@ code {
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
 }
 
+/* Featured cards: 1 column, then 2 (an odd last card spans the row), then 3. */
+.grid--featured {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 640px) {
+  .grid--featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid--featured > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 960px) {
+  .grid--featured {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid--featured > :last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+
 .page-header {
   margin-bottom: var(--space-7);
 }
@@ -1218,6 +1243,11 @@ code {
   margin-bottom: var(--space-5);
 }
 
+.prose h2 {
+  font-size: 1.25rem;
+}
+
+.prose h2,
 .prose h3 {
   margin-top: var(--space-7);
 }

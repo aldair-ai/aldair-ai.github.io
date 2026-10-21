@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Edwin Aldair Espinoza, Data Scientist building ML and GenAI systems you can measure and trust. 5+ years across banking, CPG and retail."
 title: Home
 wide: true
 ---
@@ -45,14 +46,14 @@ wide: true
 <section class="home-section reveal" aria-labelledby="featured-projects">
   <h2 id="featured-projects">Featured projects</h2>
 
-  <div class="grid">
+  <div class="grid grid--featured">
     {% assign featured_projects = site.data.projects | where: "featured", true %}
     {% for entry in featured_projects %}
       {% include project-card.html project=entry %}
     {% endfor %}
   </div>
 
-  <p class="section-more"><a href="{{ '/projects' | relative_url }}">All projects →</a></p>
+  <p class="section-more"><a href="{{ '/projects/' | relative_url }}">All projects →</a></p>
 </section>
 
 <!-- ===== Experience snapshot (content in _data/roles.yml) ===== -->
@@ -61,5 +62,5 @@ wide: true
 
   {% include timeline.html items=site.data.roles %}
 
-  <p class="section-more"><a href="{{ '/experience' | relative_url }}">Full experience →</a></p>
+  <p class="section-more"><a href="{{ '/experience/' | relative_url }}">Full experience →</a></p>
 </section>

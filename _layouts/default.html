@@ -3,9 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.url == '/' %}{{ site.author }} · {{ site.description }}{% else %}{{ page.title }} · {{ site.author }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description | strip_html | escape }}">
+  {%- if page.url == '/' -%}
+    {%- assign page_title = site.author | append: ' · ' | append: site.description -%}
+  {%- else -%}
+    {%- assign page_title = page.title | append: ' · ' | append: site.author -%}
+  {%- endif -%}
+  {%- assign page_description = page.description | default: site.description | strip_html | normalize_whitespace -%}
+  {%- assign canonical_url = page.url | remove: '.html' | absolute_url -%}
+  {%- assign social_image = '/assets/img/headshot-600.jpg' | absolute_url %}
+  <title>{{ page_title | escape }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
   <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  <!-- Open Graph and Twitter card -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.author | escape }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ social_image }}">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:alt" content="Portrait of {{ site.author | escape }}">
+  {%- if page.layout == 'post' and page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page_title | escape }}">
+  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:image" content="{{ social_image }}">
+  <meta name="twitter:image:alt" content="Portrait of {{ site.author | escape }}">
+  {%- if page.url == '/' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ site.author | jsonify }},
+      "jobTitle": "Data Scientist",
+      "url": {{ '/' | absolute_url | jsonify }},
+      "image": {{ social_image | jsonify }},
+      "email": {{ site.contact.email | prepend: 'mailto:' | jsonify }},
+      "sameAs": [{{ site.contact.linkedin | jsonify }}, {{ site.contact.github | jsonify }}]
+    }
+  </script>
+  {%- endif %}
 
   <!-- Apply a saved theme before first paint to avoid a flash. -->
   <script>
@@ -23,7 +66,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="48x48">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
   <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </head>
 <body>

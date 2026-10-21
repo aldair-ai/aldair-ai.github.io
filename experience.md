@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Work experience, education, talks, teaching and skills of Edwin Aldair Espinoza, Data Scientist."
 title: Experience
 education:
   - title: M.S. in Data Science

@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Essays and reflections on music, games, movies, and other things I find interesting."
 title: Personal
 ---
 

@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#1d4ed8"/>
-  <text x="16" y="21.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#ffffff">EE</text>
+  <rect width="32" height="32" rx="7" fill="#1d4ed8"/>
+  <g fill="#ffffff" transform="translate(3.909 20.768) scale(0.006650 -0.006650)">
+    <path transform="translate(0 0)" d="M1024 0H164V1434H991V1171H487V852H956V590H487V262H1024Z"/><path transform="translate(1049 0)" d="M1425 0H1073L971 319H461L360 0H10L532 1434H915ZM897 567 743 1049Q726 1103 719 1178H711Q706 1115 686 1053L530 567Z"/><path transform="translate(2448 0)" d="M1024 0H164V1434H991V1171H487V852H956V590H487V262H1024Z"/>
+  </g>
 </svg>
