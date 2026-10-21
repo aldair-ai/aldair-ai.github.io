@@ -1,23 +1,13 @@
 # Roles, newest first. Used by the Experience page timeline and the Home page snapshot.
-# Logos live in assets/img/logos/. Fill in each `impact` with one quantified result;
-# empty impact lines are not shown on the site.
-- title: Senior Data Scientist
-  company: Insite AI
-  location: USA (Remote)
-  dates: Jan 2025 – Sep 2025
-  logo: insiteai.png
-  description: "Led large-scale demand forecasting initiatives across 20+ U.S. retailers, delivering ML-driven inventory planning solutions for enterprise CPG clients."
-  # TODO impact: add one quantified impact line for this role.
-  impact: ""
-
+# Logos live in assets/img/logos/. `impact` is one quantified result per role (from the CV);
+# an empty impact line is not shown on the site.
 - title: Lead Data Scientist, Audit
   company: Credit Bank of Peru (Credicorp)
   location: Lima, Peru
-  dates: Nov 2023 – Jan 2025
+  dates: Nov 2023 – Sep 2025
   logo: bcp.png
   description: "Led a Data Science team delivering GenAI and computer vision solutions for audit automation, compliance monitoring, and enterprise risk management at scale."
-  # TODO impact: add one quantified impact line for this role.
-  impact: ""
+  impact: "Saved 40,000+ audit hours and ~$1M a year with computer-vision compliance monitoring across 320+ branches, plus ~$250K in cost avoidance from LLM + RAG document verification."
 
 - title: Senior Data Scientist
   company: Credit Bank of Peru
@@ -25,8 +15,7 @@
   dates: Jan 2023 – Nov 2023
   logo: bcp.png
   description: "Designed cloud-based AI systems to automate contract validation and sales compliance workflows, significantly expanding operational capacity and reducing risk exposure."
-  # TODO impact: add one quantified impact line for this role.
-  impact: ""
+  impact: "Increased contract review capacity 100× (avoiding ~$180K in annual penalties) and document processing capacity ~75× ($150K in annual savings)."
 
 - title: Senior Data Scientist, Marketplace
   company: AB InBev
@@ -34,8 +23,7 @@
   dates: Jan 2022 – Jan 2023
   logo: abinbev.png
   description: "Built and deployed ML models for personalization, demand forecasting, and growth experimentation within a large-scale B2B marketplace."
-  # TODO impact: add one quantified impact line for this role.
-  impact: ""
+  impact: "Lifted click-through rate from 7% to 10% (+$210K a year), doubled conversion from 2% to 4% (+$130K a year) and drove ~$100K a month in incremental sales from A/B-tested campaigns."
 
 - title: Data Scientist, Risk
   company: Pichincha Bank
@@ -43,5 +31,4 @@
   dates: Jan 2021 – Jan 2022
   logo: pichincha.png
   description: "Applied machine learning models to credit risk and collections optimization, improving default rates and loan recovery performance."
-  # TODO impact: add one quantified impact line for this role.
-  impact: ""
+  impact: "Reduced credit defaults by 5% (~$750K a year recovered) and raised collection rates by 4% (~$1.2M in additional annual recoveries)."

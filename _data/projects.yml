@@ -16,14 +16,14 @@
     self-contained HTML audit report.
 
     - Pip-installable · CI/CD via GitHub Actions · Published on PyPI
-    - 184 tests · 100% coverage · tested on Python 3.9 – 3.12
+    - 184 tests · 99% coverage · tested on Python 3.9 – 3.12
     - Modules: `validity`, `design`, `runtime`, `report`
   image:
     src: /assets/img/abaudit.jpg
     width: 2830
     height: 735
     alt: abaudit library
-  metrics: ["On PyPI", "184 tests", "100% coverage"]
+  metrics: ["On PyPI", "184 tests", "99% coverage"]
   tags: [Python, GitHub Actions]
   links:
     - label: GitHub

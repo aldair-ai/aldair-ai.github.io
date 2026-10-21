@@ -37,7 +37,6 @@ wide: true
     <li><img src="{{ '/assets/img/logos/mitx.png' | relative_url }}" width="251" height="77" alt="MITx" loading="lazy"></li>
     <li><img src="{{ '/assets/img/logos/bcp.png' | relative_url }}" width="317" height="80" alt="Credicorp (BCP)" loading="lazy"></li>
     <li><img src="{{ '/assets/img/logos/abinbev.png' | relative_url }}" width="320" height="59" alt="AB InBev" loading="lazy"></li>
-    <li><img src="{{ '/assets/img/logos/insiteai.png' | relative_url }}" width="320" height="77" alt="Insite AI" loading="lazy"></li>
     <li><img src="{{ '/assets/img/logos/pichincha.png' | relative_url }}" width="320" height="67" alt="Pichincha Bank" loading="lazy"></li>
   </ul>
 </section>
